@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
+    <title>Portfolio Nr.1</title>
+</head>
+<body>
+    <div class="navbar" id="navbar">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <h1>Portfolio</h1>
+        <a href="about.html"> About us</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div class="header2">
+        <h1 data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">Tekstas tekstas tekstas tekstas</h1>
+        <p data-aos="fade-up" data-aos-easing="linear" data-aos-duration="2000">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium corporis veniam molestiae! Quibusdam quae excepturi minus repellendus officiis iusto dolores, deserunt consectetur ratione adipisci consequuntur, ullam tempora qui necessitatibus quia?</p>
+        <a href="#shop" class="button" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="3000">Read more</a>
+    </div>
+    <div class="shop" id=shop>
+        <form class="form">	
+            <h2>Tekstas tekstas tekstas tekstas</h2>	
+            <fieldset>
+                <legend>Shipping Information</legend>			  
+                <label for ="shippingName">Name:</label>		  
+                <input type = "text" name = "Name" id = "shippingName" required><br/>
+
+                <label for = "shippingzip">Zip code:</label>	  
+                <input type = "text" name = "zip" id = "shippingZip" pattern = "[0-9]{5}" required><br/>
+            </fieldset>
+            
+            <input type="checkbox" id="same" name="same" onchange= "billingFunction()"/>		
+            <label for = "same">Is the Billing Information the Same?</label>
+        
+            <fieldset>
+                <legend>Billing Information</legend>			  
+                <label for ="billingName">Name:</label>		  
+                <input type = "text" name = "Name" id = "billingName" required><br/>
+        
+                <label for = "billingzip">Zip code:</label>		  <input type = "text" name = "zip" id = "billingZip" pattern = "[0-9]{5}" required><br/>
+            </fieldset>
+
+            <input type = "submit" value = "Verify" class="button1"/>	
+        </form>
+        <section class="bar">	
+            <h2>Tekstas tekstas</h2>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com"><br>
+            <input type="submit" value="Submit" class="button1">
+
+
+        </section>     
+    </div>
+    <a class="gototop" href="#"><i class="fas fa-angle-up"></i></a>
+    <footer>
+        <a href="mailto:liucija.kamarauskaite@gmail.com">
+            <img src="img/mail.png" alt="mail" title="Icons made by Tomas Knop">
+        </a>
+        <a href="callto:+37067236337">
+            <img src="img/call.png" alt="call">
+        </a>
+        <a href="https://www.linkedin.com/in/liucija-kamarauskaite/" target="_blank">
+            <img src="img/linkedin.png" alt="linkedin" title="Icons made by Smashicons">
+        </a>
+
+    </footer>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</html>
